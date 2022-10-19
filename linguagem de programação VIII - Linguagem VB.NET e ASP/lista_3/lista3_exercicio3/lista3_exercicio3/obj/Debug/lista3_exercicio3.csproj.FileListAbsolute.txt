@@ -1,0 +1,6 @@
+C:\Users\Vitor\Desktop\lista_3\lista3_exercicio3\lista3_exercicio3\bin\Debug\lista3_exercicio3.exe.config
+C:\Users\Vitor\Desktop\lista_3\lista3_exercicio3\lista3_exercicio3\bin\Debug\lista3_exercicio3.exe
+C:\Users\Vitor\Desktop\lista_3\lista3_exercicio3\lista3_exercicio3\bin\Debug\lista3_exercicio3.pdb
+C:\Users\Vitor\Desktop\lista_3\lista3_exercicio3\lista3_exercicio3\obj\Debug\lista3_exercicio3.csprojResolveAssemblyReference.cache
+C:\Users\Vitor\Desktop\lista_3\lista3_exercicio3\lista3_exercicio3\obj\Debug\lista3_exercicio3.exe
+C:\Users\Vitor\Desktop\lista_3\lista3_exercicio3\lista3_exercicio3\obj\Debug\lista3_exercicio3.pdb
