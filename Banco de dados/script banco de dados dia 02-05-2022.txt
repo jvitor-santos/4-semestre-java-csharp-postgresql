@@ -1,0 +1,99 @@
+CREATE TABLE clinica(
+	codigo serial PRIMARY KEY,
+	razao_social varchar(100) NOT NULL,
+	endereco varchar(100) NOT NULL,
+	telefone varchar(15) NOT NULL
+);
+
+CREATE TABLE plano_saude(
+	cod serial PRIMARY KEY,
+	tipo_cobertura char(5) NOT NULL,
+	descricao varchar(50) NOT NULL
+);
+
+CREATE TABLE paciente(
+	cod serial PRIMARY KEY,
+	nome varchar(100) NOT NULL,
+	endereco varchar(100) NOT NULL,
+	cidade varchar(60) NOT NULL,
+	telefone varchar(15),
+	cod_clinica integer REFERENCES clinica(codigo),
+	cod_plano integer REFERENCES plano_saude(cod)
+);
+
+CREATE TABLE especialidade(
+	cod serial PRIMARY KEY,
+	descricao varchar(100) NOT NULL
+);
+
+CREATE TABLE medico(
+	cod serial PRIMARY KEY,
+	telefone varchar(15) NOT NULL,
+	nome varchar(100) NOT NULL,
+	cod_especialidade integer REFERENCES especialidade(cod)
+);
+
+CREATE TABLE consulta(
+	numero serial PRIMARY KEY,
+	data date NOT NULL,
+	hora char(5) NOT NULL,
+	valor numeric(10,2) NOT NULL,
+	plano_particular varchar(15) NOT NULL,
+	cod_medico integer REFERENCES medico(cod),
+	cod_paciente integer REFERENCES paciente(cod)
+);
+
+////////////////////////////////////////////////////////////////////// jeito 2 //////////////////////////////////
+
+CREATE TABLE clinica(
+	codigo serial PRIMARY KEY,
+	razao_social varchar(100) NOT NULL,
+	endereco varchar(100) NOT NULL,
+	telefone varchar(15) NOT NULL
+);
+
+CREATE TABLE plano_saude(
+	cod serial PRIMARY KEY,
+	tipo_cobertura char(5) NOT NULL,
+	descricao varchar(50) NOT NULL
+);
+
+CREATE TABLE paciente(
+	cod serial PRIMARY KEY,
+	nome varchar(100) NOT NULL,
+	endereco varchar(100) NOT NULL,
+	cidade varchar(60) NOT NULL,
+	telefone varchar(15),
+	cod_clinica integer,
+	cod_plano integer
+);
+
+CREATE TABLE especialidade(
+	cod serial PRIMARY KEY,
+	descricao varchar(100) NOT NULL
+);
+
+CREATE TABLE medico(
+	cod serial PRIMARY KEY,
+	telefone varchar(15) NOT NULL,
+	nome varchar(100) NOT NULL,
+	cod_especialidade integer
+);
+
+CREATE TABLE consulta(
+	numero serial PRIMARY KEY,
+	data date NOT NULL,
+	hora char(5) NOT NULL,
+	valor numeric(10,2) NOT NULL,
+	plano_particular varchar(15) NOT NULL,
+	cod_medico integer,
+	cod_paciente integer
+);
+
+ALTER TABLE paciente ADD CONSTRAINT paciente_clinica_fk FOREIGN KEY (cod_clinica) REFERENCES clinica(codigo);
+ALTER TABLE paciente ADD CONSTRAINT paciente_plano_fk FOREIGN KEY (cod_plano) REFERENCES plano_saude(cod);
+
+ALTER TABLE medico ADD CONSTRAINT medico_especiliadade_fk FOREIGN KEY (cod_especialidade) REFERENCES especialidade(cod);
+
+ALTER TABLE consulta ADD CONSTRAINT consulta_medico_fk FOREIGN KEY (cod_medico) REFERENCES medico(cod);
+ALTER TABLE consulta ADD CONSTRAINT consulta_paciente_fk FOREIGN KEY (cod_paciente) REFERENCES paciente(cod);

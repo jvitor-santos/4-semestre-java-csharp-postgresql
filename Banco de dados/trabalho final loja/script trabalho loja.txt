@@ -1,0 +1,183 @@
+CREATE TABLE tamanho(
+	id_tamanho integer PRIMARY KEY, 
+	tamanho varchar(20), 
+	estoque varchar(20)); 
+
+CREATE TABLE categoria(
+	id_categoria integer PRIMARY KEY, 
+	categoria varchar(30)); 
+
+CREATE TABLE cliente(
+	id_cliente serial PRIMARY KEY, 
+	data_nasc date, 
+	uf char(2),
+	nome varchar(50) NOT NULL, 
+	cpf_cnpj varchar(20) NOT NULL, 
+	endereco varchar(60) NOT NULL, 
+	complemento varchar(30) NOT NULL, 
+	bairro varchar(50) NOT NULL, 
+	cidade varchar(40) NOT NULL, 
+	telefone varchar(15) NOT NULL, 
+	email varchar(60) NOT NULL); 
+
+CREATE TABLE vendedor(
+	id_vendedor integer PRIMARY KEY, 
+	nome varchar(50) NOT NULL, 
+	login varchar(10) NOT NULL, 
+	senha varchar(20) NOT NULL, 
+	perc_comis numeric(4,2) NOT NULL); 
+
+CREATE TABLE cond_pagto(
+	id_cond_pagto integer PRIMARY KEY, 
+	descricao varchar(50) NOT NULL); 
+
+CREATE TABLE vendas(
+	id_vendas serial PRIMARY KEY, 
+	data_venda date NOT NULL, 
+	cod_cond_pagto integer REFERENCES cond_pagto(id_cond_pagto), 
+	cod_vendedor integer REFERENCES vendedor(id_vendedor), 
+	cod_cliente integer REFERENCES cliente(id_cliente), 
+	cod_produto integer); 
+
+CREATE TABLE produto(
+	id_produto integer PRIMARY KEY, 
+	nome_produto varchar(50) NOT NULL, 
+	preco numeric NOT NULL, 
+	cod_tamanho integer REFERENCES tamanho(id_tamanho), 
+	cod_categoria integer REFERENCES categoria(id_categoria), 
+	cod_vendas integer); 
+
+CREATE TABLE tem(
+	desconto integer, 
+	qtde integer); 
+
+ALTER TABLE vendas ADD CONSTRAINT cod_produto_fk FOREIGN KEY (cod_produto) REFERENCES produto(id_produto);
+
+ALTER TABLE produto ADD CONSTRAINT cod_vendas_fk FOREIGN KEY (cod_vendas) REFERENCES vendas(id_vendas);
+
+INSERT INTO vendedor(id_vendedor, nome, login, senha, perc_comis)
+	VALUES (1,'Julgadox','julgadox01','31032001',12);
+
+INSERT INTO vendedor(id_vendedor, nome, login, senha, perc_comis)
+	VALUES (2,'Toloske','toloske01','08062001',10);
+
+INSERT INTO vendedor(id_vendedor, nome, login, senha, perc_comis)
+	VALUES (3,'Ofioravante','ofioravante01','04092001',14);
+
+INSERT INTO vendedor(id_vendedor, nome, login, senha, perc_comis)
+	VALUES (4,'Hiug','hiug01','08052001',11); 
+
+INSERT INTO vendedor(id_vendedor, nome, login, senha, perc_comis)
+	VALUES (5,'Prof','masterpro','melhorprofessora',30);
+
+INSERT INTO categoria(id_categoria, categoria)
+	VALUES(1,'Placa Mãe');
+
+INSERT INTO categoria(id_categoria, categoria)
+	VALUES(2,'Memoria ram');
+
+INSERT INTO categoria(id_categoria, categoria)
+	VALUES(3,'Hd');
+
+INSERT INTO categoria(id_categoria, categoria)
+	VALUES(4,'Placa de video');
+
+INSERT INTO categoria(id_categoria, categoria)
+	VALUES(5,'Processador');
+
+INSERT INTO cliente(nome, cpf_cnpj, endereco, complemento, bairro, cidade, telefone, email, data_nasc, uf)
+	VALUES('Teste_cliente1','080075411','Rua rua rua','casa','centro','São Miguel Arcanjo','(15)40028922','cliente1@hotmail.com','31-03-1995','SP');
+
+INSERT INTO cliente(nome, cpf_cnpj, endereco, complemento, bairro, cidade, telefone, email, data_nasc, uf)
+	VALUES('Teste_cliente2','2013001','Rua rua rua','casa','Parque São Bento','Itapetininga','(15)32790531','cliente2@hotmail.com','25-12-1995','SP');
+
+INSERT INTO cliente(nome, cpf_cnpj, endereco, complemento, bairro, cidade, telefone, email, data_nasc, uf)
+	VALUES('Eminem','157887','cracolandia','condominio','centro','São Paulo','(15)33451010','eminem@hotmail.com','12-08-1980','SP');
+
+INSERT INTO cliente(nome, cpf_cnpj, endereco, complemento, bairro, cidade, telefone, email, data_nasc, uf)
+	VALUES('Peter Parker','20140110','Joaquim Pereira da Silva','casa','aranha','Catanduva','(15)32798645','homemaranha@hotmail.com','24-02-1979','SP');
+
+INSERT INTO cliente(nome, cpf_cnpj, endereco, complemento, bairro, cidade, telefone, email, data_nasc, uf)
+	VALUES('Sheldon','20161120','Pereira Pereirado','Apartamento','Vila Rica','São Miguel Arcanjo','(15)99876221','sheldondestruidor@hotmail.com','25-09-1993','SP');
+
+INSERT INTO cond_pagto(id_cond_pagto, descricao)
+	VALUES(1,'Boleto'); 
+
+INSERT INTO cond_pagto(id_cond_pagto, descricao)
+	VALUES(2,'Cartão de crédito');
+
+INSERT INTO cond_pagto(id_cond_pagto, descricao)
+
+	VALUES(3,'Cartão de débito');
+
+INSERT INTO cond_pagto(id_cond_pagto, descricao)
+	VALUES(4,'Dinheiro');
+
+INSERT INTO cond_pagto(id_cond_pagto, descricao)
+	VALUES(5,'Pix');
+
+INSERT INTO tamanho(id_tamanho, tamanho, estoque)
+	VALUES(1,'Pequeno','10');
+
+INSERT INTO tamanho(id_tamanho, tamanho, estoque)
+	VALUES(2,'Grande','20');
+
+INSERT INTO tamanho(id_tamanho, tamanho, estoque)
+	VALUES(3,'Médio','30');
+
+INSERT INTO tamanho(id_tamanho, tamanho, estoque)
+	VALUES(4,'Atx','40');
+
+INSERT INTO tamanho(id_tamanho, tamanho, estoque)
+	VALUES(5,'Micro atx','50');
+
+INSERT INTO produto(id_produto, nome_produto, preco, cod_tamanho, cod_categoria)
+	VALUES(1,'Memoria Ram HyperX',250.00,1,2);
+
+INSERT INTO produto(id_produto, nome_produto, preco, cod_tamanho, cod_categoria)
+	VALUES(2,'Placa Mãe ROG Strix B450',1500.00,4,1);
+
+INSERT INTO produto(id_produto, nome_produto, preco, cod_tamanho, cod_categoria)
+	VALUES(3,'Hd Seagate 2TB',350.50,1,3);
+
+INSERT INTO produto(id_produto, nome_produto, preco, cod_tamanho, cod_categoria)
+	VALUES(4,'Placa de Video RTX 3090',18000,3,4);
+
+INSERT INTO produto(id_produto, nome_produto, preco, cod_tamanho, cod_categoria)
+	VALUES(5,'Ryzen 7 5700G',1889.90,1,5);
+
+INSERT INTO vendas(data_venda, cod_cond_pagto, cod_vendedor, cod_cliente, cod_produto)
+	VALUES('15-05-2022',1,5,3,1);
+
+INSERT INTO vendas(data_venda, cod_cond_pagto, cod_vendedor, cod_cliente, cod_produto)
+	VALUES('16-05-2022',2,4,5,2);
+
+INSERT INTO vendas(data_venda, cod_cond_pagto, cod_vendedor, cod_cliente, cod_produto)
+	VALUES('17-05-2022',3,3,4,3);
+
+INSERT INTO vendas(data_venda, cod_cond_pagto, cod_vendedor, cod_cliente, cod_produto)
+	VALUES('18-05-2022',4,2,1,4);
+
+INSERT INTO vendas(data_venda, cod_cond_pagto, cod_vendedor, cod_cliente, cod_produto)
+	VALUES('19-05-2022',5,1,2,5);
+
+UPDATE produto set cod_vendas = 1 WHERE id_produto = 1;
+UPDATE produto set cod_vendas = 2 WHERE id_produto = 2;
+UPDATE produto set cod_vendas = 3 WHERE id_produto = 3;
+UPDATE produto set cod_vendas = 4 WHERE id_produto = 4;
+UPDATE produto set cod_vendas = 5 WHERE id_produto = 5;
+
+INSERT INTO tem(desconto, qtde)
+	VALUES(10, 2);
+
+INSERT INTO tem(desconto, qtde)
+	VALUES(20, 4);
+
+INSERT INTO tem(desconto, qtde)
+	VALUES(30, 6);
+
+INSERT INTO tem(desconto, qtde)
+	VALUES(35, 7);
+
+INSERT INTO tem(desconto, qtde)
+	VALUES(40, 8);

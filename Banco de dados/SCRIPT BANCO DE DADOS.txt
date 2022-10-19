@@ -1,0 +1,27 @@
+INSERT INTO departamento (depcodigo, depnome) VALUES (3, 'Administração'),(4, 'RH'),(5,'TI'),(6,'Juridico'),(7,'Marketing'),(8,'Compras'),(9,'Produção'),(10,'Diretoria'),(11,'Manutenção'),(12,'Reclamação');
+
+INSERT INTO dependente (depencodigo, funcodigo, depennome) VALUES (1,1,'julgadox'),(2,2,'toloske'),(3,3,'ofioravante'),(4,4,'hiug'),(5,5,'chicao'),(6,6,'Rafel'),(7,7,'marmota'),(8,8,'moca'),(9,9,'tostoke'),(10,10,'naruto');
+
+INSERT INTO funcionario (funcodigo, depcodigo, funnome, funnascimento, funsalario) VALUES (2,2,'teste2','06/04/2001',3000),(4,4,'teste3','07/04/2001',3000),(5,5,'teste4','08/04/2001',3000),(6,6,'teste5','09/04/2001',3000),(7,7,'teste6','10/04/2001',3000),(8,8,'teste7','11/04/2001',3000),(9,9,'teste8','12/04/2001',3000),(10,10,'teste9','13/04/2001',3000),(11,11,'teste10','14,04,2001',3000);
+
+UPDATE departamento set depnome = 'Desenvolvimento' WHERE depcodigo = 1;
+UPDATE departamento set depnome = 'Financeiro' WHERE depcodigo = 11;
+
+UPDATE funcionario set funnome = 'Jubileu' WHERE funcodigo = 1;
+UPDATE funcionario set funnome = 'Julius' WHERE funcodigo = 11;
+
+UPDATE dependente set  depennome = 'Chaves' WHERE depencodigo = 10;
+UPDATE dependente set  depennome = 'Kiko' WHERE depencodigo = 1;
+
+DELETE FROM departamento WHERE depcodigo = 1;
+DELETE FROM departamento WHERE depcodigo = 2;
+
+DELETE FROM dependente WHERE depencodigo = 1;
+DELETE FROM dependente WHERE depencodigo = 2;
+
+DELETE FROM funcionario WHERE funcodigo = 2;
+DELETE FROM funcionario WHERE funcodigo = 4;
+
+SELECT * FROM departamento
+SELECT * FROM dependente
+SELECT * FROM funcionario

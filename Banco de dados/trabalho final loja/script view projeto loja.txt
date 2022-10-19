@@ -1,0 +1,51 @@
+5)
+CREATE VIEW junta_tab_like AS
+SELECT * FROM produto p, vendas v, cliente c WHERE p.id_produto = v.cod_produto
+AND v.cod_cliente = c.id_cliente AND c.nome LIKE '%Parker%'
+
+///////////////////////////////////// OU PODE USAR O CODIGO ABAIXO //////////////////////////////////////////////////////////////////////////////
+
+CREATE VIEW busca_nome_like AS
+SELECT p.nome_produto, v.data_venda, c.nome FROM produto p, vendas v, cliente c WHERE p.id_produto = v.cod_produto
+AND v.cod_cliente = c.id_cliente AND c.nome LIKE '%Parker%'
+
+6)
+CREATE VIEW junta_tab_limit AS
+SELECT * FROM produto p, vendas v, cliente c WHERE p.id_produto = v.cod_produto
+AND v.cod_cliente = c.id_cliente ORDER BY c.nome LIMIT 3 OFFSET 0
+
+///////////////////////////////////// OU PODE USAR O CODIGO ABAIXO //////////////////////////////////////////////////////////////////////////////
+
+CREATE VIEW busca_limit AS
+SELECT p.nome_produto, v.data_venda, c.nome FROM produto p, vendas v, cliente c WHERE p.id_produto = v.cod_produto
+AND v.cod_cliente = c.id_cliente ORDER BY c.nome LIMIT 3 OFFSET 0
+
+7)
+CREATE VIEW junta_tab_where AS
+SELECT * FROM produto p, tamanho t WHERE t.id_tamanho = p.cod_tamanho
+
+CREATE VIEW junta_tab_where2 AS
+SELECT * FROM produto p, vendas v, cond_pagto cp WHERE p.id_produto = v.cod_produto
+AND v.cod_cond_pagto = cp.id_cond_pagto
+
+8)
+CREATE VIEW junta_tab_innerjoin AS
+SELECT * FROM produto p INNER JOIN vendas v
+ON p.id_produto = v.cod_produto INNER JOIN cliente c ON v.cod_cliente = c.id_cliente
+
+CREATE VIEW junta_tab_innerjoin2 AS
+SELECT * FROM produto p INNER JOIN tamanho t ON t.id_tamanho = p.cod_tamanho
+
+9)
+CREATE VIEW junta_tab_filtro AS
+SELECT p.nome_produto, p.preco, v.data_venda, cp.descricao 
+FROM produto p, vendas v, cond_pagto cp WHERE p.id_produto = v.cod_produto
+AND v.cod_cond_pagto = cp.id_cond_pagto
+AND cp.descricao LIKE 'Cartão%' AND p.nome_produto LIKE '%a%' ORDER BY p.nome_produto
+
+10)
+CREATE VIEW junta_tab_group AS
+SELECT p.nome_produto, p.preco, v.data_venda, c.nome FROM produto p INNER JOIN vendas v
+ON p.id_produto = v.cod_produto INNER JOIN cliente c ON v.cod_cliente = c.id_cliente
+GROUP BY p.nome_produto, p.preco, v.data_venda, c.nome
+ORDER BY c.nome
