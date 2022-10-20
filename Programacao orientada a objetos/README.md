@@ -1,3 +1,5 @@
-# Atividades e projetos propostos pela professora SANDRA REGINA CIELAVIN
+# Atividades e projetos propostos em sala de aula:
 
-JAVA | JAVA DB
+pela professora SANDRA REGINA CIELAVIN
+
+JAVA | JAVA DB | NetBeans
