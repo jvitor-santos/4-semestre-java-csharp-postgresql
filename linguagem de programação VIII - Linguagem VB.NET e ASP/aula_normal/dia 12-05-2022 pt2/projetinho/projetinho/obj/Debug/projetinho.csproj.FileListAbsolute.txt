@@ -1,0 +1,12 @@
+c:\users\aluno diurno.rede-00\documents\visual studio 2015\Projects\projetinho\projetinho\bin\Debug\projetinho.exe.config
+c:\users\aluno diurno.rede-00\documents\visual studio 2015\Projects\projetinho\projetinho\bin\Debug\projetinho.exe
+c:\users\aluno diurno.rede-00\documents\visual studio 2015\Projects\projetinho\projetinho\bin\Debug\projetinho.pdb
+c:\users\aluno diurno.rede-00\documents\visual studio 2015\Projects\projetinho\projetinho\obj\Debug\projetinho.csprojResolveAssemblyReference.cache
+c:\users\aluno diurno.rede-00\documents\visual studio 2015\Projects\projetinho\projetinho\obj\Debug\projetinho.Form1.resources
+c:\users\aluno diurno.rede-00\documents\visual studio 2015\Projects\projetinho\projetinho\obj\Debug\projetinho.Properties.Resources.resources
+c:\users\aluno diurno.rede-00\documents\visual studio 2015\Projects\projetinho\projetinho\obj\Debug\projetinho.csproj.GenerateResource.Cache
+c:\users\aluno diurno.rede-00\documents\visual studio 2015\Projects\projetinho\projetinho\obj\Debug\projetinho.exe
+c:\users\aluno diurno.rede-00\documents\visual studio 2015\Projects\projetinho\projetinho\obj\Debug\projetinho.pdb
+E:\Fatec\c#\aula_normal\dia 12-05 pt2\projetinho\projetinho\bin\Debug\projetinho.exe.config
+E:\Fatec\c#\aula_normal\dia 12-05 pt2\projetinho\projetinho\obj\Debug\projetinho.exe
+E:\Fatec\c#\aula_normal\dia 12-05 pt2\projetinho\projetinho\obj\Debug\projetinho.pdb
