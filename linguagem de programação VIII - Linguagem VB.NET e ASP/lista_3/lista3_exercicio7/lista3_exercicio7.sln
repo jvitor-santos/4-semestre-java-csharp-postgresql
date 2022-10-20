@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lista3_exercicio7", "lista3_exercicio7\lista3_exercicio7.csproj", "{66414050-CB90-4056-8652-8B7EB8DD2353}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66414050-CB90-4056-8652-8B7EB8DD2353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66414050-CB90-4056-8652-8B7EB8DD2353}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66414050-CB90-4056-8652-8B7EB8DD2353}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66414050-CB90-4056-8652-8B7EB8DD2353}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
