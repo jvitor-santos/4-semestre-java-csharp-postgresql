@@ -1,0 +1,6 @@
+C:\Users\Fatec\Desktop\exemplo 07-03\exemplo 07-03\bin\Debug\exemplo 07-03.exe.config
+C:\Users\Fatec\Desktop\exemplo 07-03\exemplo 07-03\bin\Debug\exemplo 07-03.exe
+C:\Users\Fatec\Desktop\exemplo 07-03\exemplo 07-03\bin\Debug\exemplo 07-03.pdb
+C:\Users\Fatec\Desktop\exemplo 07-03\exemplo 07-03\obj\Debug\exemplo 07-03.csprojResolveAssemblyReference.cache
+C:\Users\Fatec\Desktop\exemplo 07-03\exemplo 07-03\obj\Debug\exemplo 07-03.exe
+C:\Users\Fatec\Desktop\exemplo 07-03\exemplo 07-03\obj\Debug\exemplo 07-03.pdb
