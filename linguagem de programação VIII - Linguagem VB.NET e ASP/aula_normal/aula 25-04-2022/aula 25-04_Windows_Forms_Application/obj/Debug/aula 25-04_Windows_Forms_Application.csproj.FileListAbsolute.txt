@@ -1,0 +1,12 @@
+E:\Fatec\c#\aula_normal\aula 25-04_Windows_Forms_Application\aula 25-04_Windows_Forms_Application\bin\Debug\aula 25-04_Windows_Forms_Application.exe.config
+E:\Fatec\c#\aula_normal\aula 25-04_Windows_Forms_Application\aula 25-04_Windows_Forms_Application\bin\Debug\aula 25-04_Windows_Forms_Application.exe
+E:\Fatec\c#\aula_normal\aula 25-04_Windows_Forms_Application\aula 25-04_Windows_Forms_Application\bin\Debug\aula 25-04_Windows_Forms_Application.pdb
+E:\Fatec\c#\aula_normal\aula 25-04_Windows_Forms_Application\aula 25-04_Windows_Forms_Application\obj\Debug\aula 25-04_Windows_Forms_Application.csprojResolveAssemblyReference.cache
+E:\Fatec\c#\aula_normal\aula 25-04_Windows_Forms_Application\aula 25-04_Windows_Forms_Application\obj\Debug\aula_25_04_Windows_Forms_Application.Form1.resources
+E:\Fatec\c#\aula_normal\aula 25-04_Windows_Forms_Application\aula 25-04_Windows_Forms_Application\obj\Debug\aula_25_04_Windows_Forms_Application.Properties.Resources.resources
+E:\Fatec\c#\aula_normal\aula 25-04_Windows_Forms_Application\aula 25-04_Windows_Forms_Application\obj\Debug\aula 25-04_Windows_Forms_Application.csproj.GenerateResource.Cache
+E:\Fatec\c#\aula_normal\aula 25-04_Windows_Forms_Application\aula 25-04_Windows_Forms_Application\obj\Debug\aula 25-04_Windows_Forms_Application.exe
+E:\Fatec\c#\aula_normal\aula 25-04_Windows_Forms_Application\aula 25-04_Windows_Forms_Application\obj\Debug\aula 25-04_Windows_Forms_Application.pdb
+F:\Fatec\c#\aula_normal\aula 25-04_Windows_Forms_Application\aula 25-04_Windows_Forms_Application\bin\Debug\aula 25-04_Windows_Forms_Application.exe.config
+F:\Fatec\c#\aula_normal\aula 25-04_Windows_Forms_Application\aula 25-04_Windows_Forms_Application\obj\Debug\aula 25-04_Windows_Forms_Application.exe
+F:\Fatec\c#\aula_normal\aula 25-04_Windows_Forms_Application\aula 25-04_Windows_Forms_Application\obj\Debug\aula 25-04_Windows_Forms_Application.pdb
