@@ -1,0 +1,7 @@
+E:\Fatec\c#\aula_normal\dia 16-05\exemplo\exemplo\bin\Debug\exemplo.exe.config
+E:\Fatec\c#\aula_normal\dia 16-05\exemplo\exemplo\obj\Debug\exemplo.csprojResolveAssemblyReference.cache
+E:\Fatec\c#\aula_normal\dia 16-05\exemplo\exemplo\obj\Debug\exemplo.FormPrincipal.resources
+E:\Fatec\c#\aula_normal\dia 16-05\exemplo\exemplo\obj\Debug\exemplo.FormCadCliFis.resources
+E:\Fatec\c#\aula_normal\dia 16-05\exemplo\exemplo\obj\Debug\exemplo.FormCadCliJur.resources
+E:\Fatec\c#\aula_normal\dia 16-05\exemplo\exemplo\obj\Debug\exemplo.Properties.Resources.resources
+E:\Fatec\c#\aula_normal\dia 16-05\exemplo\exemplo\obj\Debug\exemplo.csproj.GenerateResource.Cache
