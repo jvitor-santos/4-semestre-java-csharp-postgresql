@@ -1,0 +1,6 @@
+E:\Fatec\c#\aula_normal\exeplo retorno\exeplo retorno\bin\Debug\exeplo retorno.exe.config
+E:\Fatec\c#\aula_normal\exeplo retorno\exeplo retorno\bin\Debug\exeplo retorno.exe
+E:\Fatec\c#\aula_normal\exeplo retorno\exeplo retorno\bin\Debug\exeplo retorno.pdb
+E:\Fatec\c#\aula_normal\exeplo retorno\exeplo retorno\obj\Debug\exeplo retorno.csprojResolveAssemblyReference.cache
+E:\Fatec\c#\aula_normal\exeplo retorno\exeplo retorno\obj\Debug\exeplo retorno.exe
+E:\Fatec\c#\aula_normal\exeplo retorno\exeplo retorno\obj\Debug\exeplo retorno.pdb
