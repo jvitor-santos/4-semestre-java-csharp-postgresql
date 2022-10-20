@@ -1,0 +1,9 @@
+F:\Fatec\c#\aula_normal\exemplo_forms_28-04\exemplo_forms_28-04\bin\Debug\exemplo_forms_28-04.exe.config
+F:\Fatec\c#\aula_normal\exemplo_forms_28-04\exemplo_forms_28-04\bin\Debug\exemplo_forms_28-04.exe
+F:\Fatec\c#\aula_normal\exemplo_forms_28-04\exemplo_forms_28-04\bin\Debug\exemplo_forms_28-04.pdb
+F:\Fatec\c#\aula_normal\exemplo_forms_28-04\exemplo_forms_28-04\obj\Debug\exemplo_forms_28-04.csprojResolveAssemblyReference.cache
+F:\Fatec\c#\aula_normal\exemplo_forms_28-04\exemplo_forms_28-04\obj\Debug\exemplo_forms_28_04.Form1.resources
+F:\Fatec\c#\aula_normal\exemplo_forms_28-04\exemplo_forms_28-04\obj\Debug\exemplo_forms_28_04.Properties.Resources.resources
+F:\Fatec\c#\aula_normal\exemplo_forms_28-04\exemplo_forms_28-04\obj\Debug\exemplo_forms_28-04.csproj.GenerateResource.Cache
+F:\Fatec\c#\aula_normal\exemplo_forms_28-04\exemplo_forms_28-04\obj\Debug\exemplo_forms_28-04.exe
+F:\Fatec\c#\aula_normal\exemplo_forms_28-04\exemplo_forms_28-04\obj\Debug\exemplo_forms_28-04.pdb
